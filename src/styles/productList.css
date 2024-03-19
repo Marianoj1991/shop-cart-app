@@ -1,0 +1,44 @@
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+.product-item {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+  transition: transform 300ms ease;
+}
+
+.product-item:hover {
+  transform: scale(1.1);
+}
+
+.product-item img {
+  border-radius: 4px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: block;
+  object-fit: contain;
+  background: #fff;
+}
+
+
